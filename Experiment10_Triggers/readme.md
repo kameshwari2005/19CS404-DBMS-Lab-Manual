@@ -3,8 +3,6 @@
 ## AIM
 To write and execute PL/SQL trigger programs for automating actions in response to specific table events like INSERT, UPDATE, or DELETE.
 
----
-
 ## THEORY
 
 A **trigger** is a stored PL/SQL block that is automatically executed or fired when a specified event occurs on a table or view. Triggers can be used for enforcing business rules, auditing changes, or automatic updates.
@@ -33,7 +31,6 @@ END;
 **Expected Output:**
 - A new entry is added to the `employee_log` table each time a new record is inserted into the `employees` table.
 
----
 
 ## 2. Write a trigger to prevent deletion of records from a sensitive table.
 **Steps:**
@@ -43,7 +40,6 @@ END;
 **Expected Output:**
 - If an attempt is made to delete a record from `sensitive_data`, an error message is raised, e.g., `ERROR: Deletion not allowed on this table.`
 
----
 
 ## 3. Write a trigger to automatically update a `last_modified` timestamp.
 **Steps:**
@@ -53,7 +49,6 @@ END;
 **Expected Output:**
 - The `last_modified` column in the `products` table is updated automatically to the current date and time when any record is updated.
 
----
 
 ## 4. Write a trigger to keep track of the number of updates made to a table.
 **Steps:**
@@ -63,7 +58,6 @@ END;
 **Expected Output:**
 - The `audit_log` table will maintain a count of how many updates have been made to the `customer_orders` table.
 
----
 
 ## 5. Write a trigger that checks a condition before allowing insertion into a table.
 **Steps:**
